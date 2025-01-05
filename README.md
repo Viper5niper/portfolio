@@ -1,24 +1,42 @@
-[![Watch tutorial here](https://img.youtube.com/vi/sUKptmUVIBM/0.jpg)](https://youtu.be/sUKptmUVIBM)
+# Portfolio
 
-# [Watch video here](https://youtu.be/sUKptmUVIBM)
+Welcome to my portfolio! This repository showcases my projects, skills, and experiences as a software developer.
 
-## What you will learn
+## Table of Contents
 
-- Latest Next.js 13 features
-- Next.js App Router
-- Next.js Server Actions
-- Client & Server Components
-- TypeScript (Beginner & Intermediate)
-- Tailwind CSS
-- Context API
-- Advanced Animations with Framer Motion
-- React.Email & Resend
-- Custom React hooks
-- Fresh, modern UI design
-- Light & Dark mode
-- Responsive website
+- [About Me](#about-me)
+- [Projects](#projects)
+- [Skills](#skills)
+- [Contact](#contact)
 
-## Setup
+## About Me
 
-1. Add RESEND_API_KEY environment variable in .env.local
-2. In the send-email.ts action file, change the "to" email to your own email
+Hello! I'm Ruben Mulato, a passionate software developer with a focus on creating innovative and efficient solutions. I have experience in various programming languages and frameworks, and I enjoy working on both front-end and back-end development.
+
+## Projects
+
+### Project 1: [Project Name](link-to-project)
+- **Description:** Brief description of the project.
+- **Technologies Used:** List of technologies used in the project.
+- **Features:** Key features of the project.
+
+### Project 2: [Project Name](link-to-project)
+- **Description:** Brief description of the project.
+- **Technologies Used:** List of technologies used in the project.
+- **Features:** Key features of the project.
+
+## Skills
+
+- **Programming Languages:** List of programming languages you are proficient in.
+- **Frameworks and Libraries:** List of frameworks and libraries you have experience with.
+- **Tools and Technologies:** List of tools and technologies you are familiar with.
+
+## Contact
+
+Feel free to reach out to me via the following platforms:
+
+- **Email:** [your-email@example.com](mailto:your-email@example.com)
+- **LinkedIn:** [Your LinkedIn Profile](link-to-linkedin)
+- **GitHub:** [Your GitHub Profile](link-to-github)
+
+Thank you for visiting my portfolio!

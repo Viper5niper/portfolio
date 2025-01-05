@@ -41,7 +41,7 @@ export const experiencesData = [
     title: "Freelancer Developer",
     location: "",
     description:
-    "Developed vending machine firmware using Arduino and C++, created a Sports Mobile app with Flutter and integrated Firebase for real-time updates, and designed POS and stock management systems using Laravel and MS Access.",
+    "The projects I worked in include: vending machine firmware using Arduino and C++, sports social media app with Flutter and Firebase for real-time updates, POS systems with Laravel and a stock management system made with MS Access.",
     icon: React.createElement(CgWorkAlt),
     date: "Jan. 2020 - May. 2021",
   },
@@ -49,7 +49,7 @@ export const experiencesData = [
     title: "Web Developer Contract",
     location: "RS Rent a Car",
     description:
-    "Automated processes for two mechanical workshops (revisar), including budgeting, weekly money flow reports, insurance-specific budgets, workload reports, and job progress tracking using Laravel, MySQL, Hostinger.",
+    "I automated several processes for the repair shops inside this company. These processes include budgets, weekly money flow reports, insurance-specific budgets, workload reports, and job progress tracking. I implemented Laravel, MySQL and Hostinger for these projects.",
     icon: React.createElement(CgWorkAlt),
     date: "Jun. 2021 - Jan. 2022",
   },
@@ -57,7 +57,7 @@ export const experiencesData = [
     title: "Full-stack Developer & Customer Support",
     location: "Open Solutions Systems",
     description:
-    "Provided technical support for multiple customers, maintaining and developing new features to many ERP systems (PHP, Codeigniter, Vue.js, JQuery), deployment of changes to our main server via SSH or FileZilla and control of critical database changes. Customers for this company include hospitals, drugstores, mechanical workshops, financial services, ophthalmological services, convenience stores, etc.",
+    "At this company, I provided technical support for multiple customers of our POS and stock management system (PHP, Codeigniter, Vue.js, JQuery). This job required me to fix bugs and develop new features for each individual system as well. This included deployment of changes to our main server via SSH or FileZilla and control of critical database changes. Customers for this company include hospitals, drugstores, mechanical workshops, financial services, ophthalmological services, convenience stores, etc.",
     icon: React.createElement(CgWorkAlt),
     date: "Feb. 2022 - Aug. 2022",
   },
@@ -65,7 +65,7 @@ export const experiencesData = [
     title: "Full-stack Developer",
     location: "Focus IT Outsourcing",
     description:
-    "I collaborated with a USA-based client on an ERP software for franchises, utilizing the MERN stack. My responsibilities included designing, developing, and maintaining the application, and managing Docker container deployments to our Digital Ocean servers. I participated in scrum meetings and provided technical support to junior developers.",
+    "I collaborated with a USA-based client on an ERP software for franchises, utilizing the MERN stack. My responsibilities included designing, developing, maintaining the application, and managing Docker container deployments to our Digital Ocean servers. I participated in scrum meetings and provided technical support to junior developers.",
     icon: React.createElement(CgWorkAlt),
     date: "Aug. 2022 - Aug. 2023",
   },
@@ -73,7 +73,7 @@ export const experiencesData = [
     title: "Graduated as Software Engineer",
     location: "National University of El Salvador",
     description:
-      "I graduated as a Software Engineer, while working as a full-stack developer in my third formal job.",
+      "I graduated as a Software Engineer, while working full-time as a full-stack developer in my third formal job.",
     icon: React.createElement(LuGraduationCap),
     date: "2023",
   },
@@ -81,7 +81,7 @@ export const experiencesData = [
     title: "Ssr full-stack Developer",
     location: "CityLab",
     description:
-      "Contributed to the development of a nationwide ERP system for El Salvador’s national water utility company (ANDA). I mainly worked in a form template system (T-SQL, React.js, AWS) to automate approximately 150 different processes inside ANDA’s duties.  I collaborated with my team to deliver high-quality solutions and provide technical expertise where needed.",
+      "I contributed to the development of a nationwide ERP system for El Salvador’s national water utility company (ANDA). While I mainly worked as a back-end developer (SQL SERVER, T-SQL, .NET, AWS), my duties also extended to the web app (React.js, Tailwind, Zustand), a mobile app (React Native) and a form template system to automate approximately 150 different processes inside ANDA’s duties. I also helped in the development of an stock management system for El Salvador's National Healthcare Ministry (Vue.js, Node.js, PostgreSQL), which was oriented to manage medical supplies at a nationwide level.",
     icon: React.createElement(FaReact),
     date: "Sep. 2023 - Oct. 2024",
   },
@@ -91,7 +91,7 @@ export const projectsData = [
   {
     title: "RS Repair Shop System",
     description:
-      "It's a platform to manage clients and services, check earnings and expenses and generate reports for insurance companies. It has features like filtering, sorting and pagination.",
+      "It's a platform to manage clients and services, check earnings, expenses and generate reports for insurance companies. It has features like filtering, sorting and pagination.",
     tags: ["PHP", "Laravel", "MySQL"],
     imageUrl: autoloters,
   },
@@ -105,7 +105,7 @@ export const projectsData = [
   {
     title: "UES Thesis Manager",
     description:
-      "Full-stack web and mobile apps to manage thesis projects all around my university.",
+      "Web and mobile app to control thesis projects all around my university.",
     tags: ["React", "Apache Cordova", "Context API", "Materialize CSS", "MySQL", "PHP", "Slim Framework"],
     imageUrl: tmngr,
   },
@@ -119,7 +119,7 @@ export const projectsData = [
   {
     title: "Sports Social Media",
     description:
-      "A social media app oriented to promoting sports and a healthy lifestyle. It has features like liking, commenting, posting, and searching sport events in your area.",
+      "Social media app oriented to promoting sports and a healthy lifestyle. It has features like posting, commenting, liking, and searching for sport events in your area.",
     tags: ["Flutter", "Firebase"],
     imageUrl: jsa,
   },
@@ -140,12 +140,15 @@ export const skillsData = [
   "C#",
   "HTML",
   "CSS",
+  "jQuery",
   "Tailwind",
   "React",
   "Redux",
+  "Zustand",
   "Vue",
   "Vuex",
   "Next.js",
+  "Flutter",
   "Node.js",
   "Express",
   "NestJS",
@@ -153,11 +156,15 @@ export const skillsData = [
   "Laravel",
   "CodeIgniter",
   ".NET",
-  "Git / GitHub / GitLab",
+  "Git",
+  "Github",
+  "GitLab",
   "MongoDB",
   "MySQL",
   "PostgreSQL",
+  "SQLServer",
   "Redis",
+  "Firebase",
   "Docker",
   "AWS",
   "Digital Ocean",
