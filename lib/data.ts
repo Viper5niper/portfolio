@@ -41,7 +41,7 @@ export const experiencesData = [
     title: "Freelancer Developer",
     location: "",
     description:
-    "The projects I worked in include: vending machine firmware using Arduino and C++, sports social media app with Flutter and Firebase for real-time updates, POS systems with Laravel and a stock management system made with MS Access.",
+    "The projects I worked on include: vending machine firmware using Arduino and C++, a sports social media app built with Flutter and Firebase for real-time updates, POS systems using Laravel, and a stock management system developed with MS Access.",
     icon: React.createElement(CgWorkAlt),
     date: "Jan. 2020 - May. 2021",
   },
@@ -49,7 +49,7 @@ export const experiencesData = [
     title: "Web Developer Contract",
     location: "RS Rent a Car",
     description:
-    "I automated several processes for the repair shops inside this company. These processes include budgets, weekly money flow reports, insurance-specific budgets, workload reports, and job progress tracking. I implemented Laravel, MySQL and Hostinger for these projects.",
+    "I automated several processes for the company's repair shops, including budgets, weekly cash flow reports, insurance-specific budgets, workload reports, and job progress tracking. I used Laravel, MySQL, and Hostinger to implement these projects.",
     icon: React.createElement(CgWorkAlt),
     date: "Jun. 2021 - Jan. 2022",
   },
@@ -57,7 +57,7 @@ export const experiencesData = [
     title: "Full-stack Developer & Customer Support",
     location: "Open Solutions Systems",
     description:
-    "At this company, I provided technical support for multiple customers of our POS and stock management system (PHP, Codeigniter, Vue.js, JQuery). This job required me to fix bugs and develop new features for each individual system as well. This included deployment of changes to our main server via SSH or FileZilla and control of critical database changes. Customers for this company include hospitals, drugstores, mechanical workshops, financial services, ophthalmological services, convenience stores, etc.",
+    "At Open Solution Systems, I provided technical support for clients using our POS and stock management system (PHP, CodeIgniter, Vue.js, jQuery). My role involved fixing bugs, developing new features, and deploying changes to the main server via SSH or FileZilla. I also managed critical database changes. Our clients included hospitals, drugstores, mechanical workshops, financial services, ophthalmological clinics, convenience stores, and more.",
     icon: React.createElement(CgWorkAlt),
     date: "Feb. 2022 - Aug. 2022",
   },
@@ -65,15 +65,15 @@ export const experiencesData = [
     title: "Full-stack Developer",
     location: "Focus IT Outsourcing",
     description:
-    "I collaborated with a USA-based client on an ERP software for franchises, utilizing the MERN stack. My responsibilities included designing, developing, maintaining the application, and managing Docker container deployments to our Digital Ocean servers. I participated in scrum meetings and provided technical support to junior developers.",
+    "I collaborated with a USA-based client to develop ERP software for franchises, utilizing the MERN stack. My responsibilities included designing, developing, and maintaining the application, as well as managing Docker container deployments to our DigitalOcean servers. I actively participated in scrum meetings and provided technical support to junior developers.",
     icon: React.createElement(CgWorkAlt),
     date: "Aug. 2022 - Aug. 2023",
   },
   {
     title: "Graduated as Software Engineer",
-    location: "National University of El Salvador",
+    location: "National University of El Salvador (UES)",
     description:
-      "I graduated as a Software Engineer, while working full-time as a full-stack developer in my third formal job.",
+      "Graduated with a degree in Software Engineering while working full-time as a Full-Stack Developer",
     icon: React.createElement(LuGraduationCap),
     date: "2023",
   },
@@ -81,7 +81,7 @@ export const experiencesData = [
     title: "Ssr full-stack Developer",
     location: "CityLab",
     description:
-      "I contributed to the development of a nationwide ERP system for El Salvador’s national water utility company (ANDA). While I mainly worked as a back-end developer (SQL SERVER, T-SQL, .NET, AWS), my duties also extended to the web app (React.js, Tailwind, Zustand), a mobile app (React Native) and a form template system to automate approximately 150 different processes inside ANDA’s duties. I also helped in the development of an stock management system for El Salvador's National Healthcare Ministry (Vue.js, Node.js, PostgreSQL), which was oriented to manage medical supplies at a nationwide level.",
+      "I contributed to the development of a nationwide ERP system for El Salvador’s national water utility company (ANDA). While my primary focus was back-end development (SQL Server, T-SQL, .NET, AWS), I also worked on the web app (React.js, Tailwind, Zustand), a mobile app (React Native), and a form template system to automate approximately 150 different processes within ANDA’s operations. Additionally, I assisted in the development of a stock management system for El Salvador's National Healthcare Ministry (Vue.js, Node.js, PostgreSQL), designed to manage medical supplies nationwide.",
     icon: React.createElement(FaReact),
     date: "Sep. 2023 - Oct. 2024",
   },
@@ -91,35 +91,35 @@ export const projectsData = [
   {
     title: "RS Repair Shop System",
     description:
-      "It's a platform to manage clients and services, check earnings, expenses and generate reports for insurance companies. It has features like filtering, sorting and pagination.",
+      "It is a platform designed to manage clients and services, track earnings and expenses, and generate reports for insurance companies. Key features include filtering, sorting, and pagination.",
     tags: ["PHP", "Laravel", "MySQL"],
     imageUrl: autoloters,
   },
   {
     title: "RS Body & Paint Shop System",
     description:
-      "An evolution of the previous system, it aggregates tools to track jobs in progress, manage job load and track expenses for each individual job.",
+      "An enhanced version of the previous system, it provides tools to monitor jobs in progress, balance workloads, and track expenses for each job.",
     tags: ["PHP", "Laravel", "MySQL"],
     imageUrl: pintasal,
   },
   {
     title: "UES Thesis Manager",
     description:
-      "Web and mobile app to control thesis projects all around my university.",
+      "UES Thesis Manager is a web and mobile application designed to manage thesis projects across the university.",
     tags: ["React", "Apache Cordova", "Context API", "Materialize CSS", "MySQL", "PHP", "Slim Framework"],
     imageUrl: tmngr,
   },
   {
     title: "DomoHome",
     description:
-      "This Web App allows you to control and program your sprinklers, lights and other devices from your phone or PC.",
+      "Web application that lets you control and schedule your sprinklers, lights, and other devices from your phone or PC.",
     tags: ["React", "Materialize CSS", "MySQL", "PHP", "Arduino", "Cron Jobs"],
     imageUrl: domohome,
   },
   {
     title: "Sports Social Media",
     description:
-      "Social media app oriented to promoting sports and a healthy lifestyle. It has features like posting, commenting, liking, and searching for sport events in your area.",
+      "It is a platform designed to promote sports and a healthy lifestyle. It includes features such as posting, commenting, liking, and searching for sporting events in your area.",
     tags: ["Flutter", "Firebase"],
     imageUrl: jsa,
   },
