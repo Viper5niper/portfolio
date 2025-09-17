@@ -1,43 +1,61 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { useSectionInView } from "@/lib/hooks";
+import autoloters from "@/public/autoloters.jpeg";
+import Parallax from "./paralax";
 
 export default function About() {
   const { ref } = useSectionInView("About");
+  const [views, setViews] = useState(false);
 
   return (
+    <>
     <motion.section
       ref={ref}
-      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+      className="mb-20 max-w-[45rem] text-center leading-8 sm:mb-20 scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
       id="about"
-    >
+      >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        When I first started coding in PHP, I discovered my passion for web development. 
-        I was captivated by the idea of creating something myself and making it accessible {" "}<span className="italic">all around the world</span>. 
-        So I started working on my {" "}<span className="underline">web developer</span> skills while studying and, 
-        by the time I was graduating, I was already working as a full-stack developer.
-        My main stack is 
+        I mainly focus on backend development, but I really enjoy working on different parts of a project. My main stack is
         {" "}
         <span className="font-medium"> 
-          React, Node.js and MongoDB.
+          React, Node.js with Express.js / Nest.JS / Prisma and MongoDB.
         </span>{" "}
-        I also like to program in Arduino and make mobile apps. I am currently seeking a {" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+        , but I'm very involved with other languages technologies as well, such as PHP, .NET, Java, Python and C++. I'm also proficient
+        in mobile app development with React Native and Flutter.
       </p>
 
-      <p>
+      <p className="mb-3">
         <span className="italic">When I'm not coding</span>, I enjoy playing the guitar, reading books, 
         playing video games or working on my motorcycle.
-        I also like riding to the countryside to relax and enjoy the views.
+        I also like riding to the countryside to relax and enjoy the 
+          <motion.span
+          onClick={() => setViews(true)}
+          className="cursor-pointer text-3xl font-bold inline-block"
+          animate={{
+            y: [0, -12, 0],       // bounce
+            rotate: [0, -5, 5, 0] // wiggle
+          }}
+          transition={{
+            duration: 1.2,
+            repeat: Infinity,
+            repeatType: "loop",   // ensures looping
+            ease: "easeInOut"
+          }}
+        >
+          views
+        </motion.span>.
       </p>
+    {views && <Parallax/>}
     </motion.section>
+    </>
   );
 }
