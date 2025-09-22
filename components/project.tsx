@@ -5,15 +5,19 @@ import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { AnimatePresence, motion, useScroll, useTransform } from "framer-motion";
 
-type ProjectProps = (typeof projectsData)[number];
+type ProjectProps = (typeof projectsData)[number] & {
+  index: number;
+};
 
 export default function Project({
   title,
   description,
   tags,
   imageUrl,
-  gallery
+  gallery,
+  index
 }: ProjectProps) {
+  const isEven = index % 2 === 0;
   const [open, setOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -39,10 +43,14 @@ export default function Project({
         scale: scaleProgess,
         opacity: opacityProgess,
       }}
-      className="group mb-3 sm:mb-8 last:mb-0"
+      onClick={() => setOpen(true)}
+      className="group mb-3 sm:mb-8 last:mb-0 cursor-pointer"
     >
-      <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
-        <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
+      <section className={`bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden relative sm:h-[20rem] transition
+        hover:bg-gray-200 dark:text-white dark:bg-white/10 dark:hover:bg-white/20
+        ${isEven ? "sm:pl-8" : "sm:pr-8"}`}>
+        <div className={`pt-4 pb-7 px-5 sm:pt-10 sm:max-w-[50%] flex flex-col h-full
+          ${!isEven ? "sm:ml-[20rem]" : "sm:mr-[18rem]"}`}>
           <h3 className="text-2xl font-semibold">{title}</h3>
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
             {description}
@@ -63,19 +71,11 @@ export default function Project({
           src={imageUrl}
           alt="Project I worked on"
           quality={95}
-          onClick={() => setOpen(true)}
-          className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl cursor-pointer
-        transition 
-        group-hover:scale-[1.04]
-        group-hover:-translate-x-3
-        group-hover:translate-y-3
-        group-hover:-rotate-2
-
-        group-even:group-hover:translate-x-3
-        group-even:group-hover:translate-y-3
-        group-even:group-hover:rotate-2
-
-        group-even:right-[initial] group-even:-left-40"
+          className={`absolute hidden sm:block top-8 w-[28.25rem] rounded-t-lg shadow-2xl transition
+          group-hover:scale-[1.04] group-hover:translate-y-3
+          ${isEven
+            ? "-right-40 group-hover:-translate-x-3 group-hover:-rotate-2"
+            : "-left-40 group-hover:translate-x-3 group-hover:rotate-2"}`}
         />
       </section>
     </motion.div>
@@ -92,7 +92,7 @@ export default function Project({
                 <div className="absolute inset-0" onClick={() => setOpen(false)} />
 
                 <motion.div
-                  className="relative flex flex-col items-center"
+                  className="relative flex flex-col items-center justify-center"
                   initial={{ scale: 0.9, opacity: 0 }}
                   animate={{ scale: 1, opacity: 1 }}
                   exit={{ scale: 0.9, opacity: 0 }}
@@ -107,13 +107,14 @@ export default function Project({
                   </button>
 
                   {/* Single Image */}
-                  <Image
-                    src={gallery[currentIndex]}
-                    alt={`${title} screenshot ${currentIndex + 1}`}
-                    width={900}
-                    height={600}
-                    className="rounded-lg shadow-2xl max-h-[80vh] object-contain"
-                  />
+                  <div className="relative w-[90vw] max-w-[900px] h-[80vh]">
+                    <Image
+                      src={gallery[currentIndex]}
+                      alt={`${title} screenshot ${currentIndex + 1}`}
+                      fill
+                      className="rounded-lg shadow-2xl object-contain"
+                    />
+                  </div>
 
                   {/* Controls */}
                   <div className="flex justify-between w-full mt-4">

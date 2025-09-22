@@ -36,18 +36,18 @@ export default function About() {
       <p className="mb-3">
         <span className="italic">When I'm not coding</span>, I enjoy playing the guitar, reading books, 
         playing video games or working on my motorcycle.
-        I also like riding to the countryside to relax and enjoy the 
+        I also like riding to the countryside to relax and enjoy the{" "}
           <motion.span
           onClick={() => setViews(true)}
-          className="cursor-pointer text-3xl font-bold inline-block"
+          className="cursor-pointer text-xl font-bold inline-block"
           animate={{
-            y: [0, -12, 0],       // bounce
-            rotate: [0, -5, 5, 0] // wiggle
+            y: [0, -12, 0],
+            rotate: [0, -5, 5, 0]
           }}
           transition={{
             duration: 1.2,
             repeat: Infinity,
-            repeatType: "loop",   // ensures looping
+            repeatType: "loop",
             ease: "easeInOut"
           }}
         >
