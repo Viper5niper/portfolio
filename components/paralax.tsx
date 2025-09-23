@@ -103,13 +103,14 @@ function StyleSheet() {
 
         @media (max-width: 500px) {
             .img-container > div {
-                width: 150px;
-                height: 200px;
+                width: 100%;
+                height: 40vh;
             }
 
             .img-container img {
-                width: 150px;
-                height: 200px;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
             }
         }
 
@@ -124,7 +125,7 @@ function StyleSheet() {
             position: absolute;
             display: inline-block;
             top: calc(10% - 25px);
-            left: calc(10% + 120px);
+            left: 10%;
         }
     `}</style>
     )

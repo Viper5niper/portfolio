@@ -46,16 +46,16 @@ export const links = [
     hash: "#about",
   },
   {
+    name: "Experience",
+    hash: "#experience",
+  },
+  {
     name: "Projects",
     hash: "#projects",
   },
   {
     name: "Skills",
     hash: "#skills",
-  },
-  {
-    name: "Experience",
-    hash: "#experience",
   },
   {
     name: "Contact",
@@ -122,7 +122,7 @@ export const projectsData = [
     tags: ["PHP", "Laravel", "MySQL"],
     imageUrl: autoloters,
     gallery: [
-      "/project_images/autoloters/0.jpeg",
+      "/project_images/autoloters/0.png",
       "/project_images/autoloters/1.png",
       "/project_images/autoloters/2.png",
       "/project_images/autoloters/3.png",
@@ -141,10 +141,10 @@ export const projectsData = [
           "/project_images/pintasal/1.png",
           "/project_images/pintasal/2.png",
           "/project_images/pintasal/3.png",
-          "/project_images/pintasal/4.png",
-          "/project_images/pintasal/5.png",
-          "/project_images/pintasal/6.png",
-          "/project_images/pintasal/7.png",
+          // "/project_images/pintasal/4.png",
+          // "/project_images/pintasal/5.png",
+          // "/project_images/pintasal/6.png",
+          // "/project_images/pintasal/7.png",
           "/project_images/pintasal/8.png",
           "/project_images/pintasal/9.png",
           "/project_images/pintasal/10.png",

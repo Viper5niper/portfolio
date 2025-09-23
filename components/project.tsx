@@ -107,7 +107,7 @@ export default function Project({
                   </button>
 
                   {/* Single Image */}
-                  <div className="relative w-[90vw] max-w-[900px] h-[80vh]">
+                  <div className="relative w-[90vw] max-w-[900px] h-[70vh]">
                     <Image
                       src={gallery[currentIndex]}
                       alt={`${title} screenshot ${currentIndex + 1}`}

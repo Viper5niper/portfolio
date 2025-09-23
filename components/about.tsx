@@ -16,7 +16,7 @@ export default function About() {
     <>
     <motion.section
       ref={ref}
-      className="mb-20 max-w-[45rem] text-center leading-8 sm:mb-20 scroll-mt-28"
+      className="mb-20 max-w-[45rem] text-justify leading-8 sm:mb-20 scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
@@ -24,12 +24,12 @@ export default function About() {
       >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        I mainly focus on backend development, but I really enjoy working on different parts of a project. My main stack is
+        I mainly focus on backend development, but I really enjoy working on different parts of every project. My main stack is
         {" "}
         <span className="font-medium"> 
-          React, Node.js with Express.js / Nest.JS / Prisma and MongoDB.
+          React, Node.js with Express.js / Nest.JS / Prisma and MongoDB
         </span>{" "}
-        , but I'm very involved with other languages technologies as well, such as PHP, .NET, Java, Python and C++. I'm also proficient
+        , but I'm very involved with other languages and technologies as well, such as PHP, .NET, Java, Python and C++. I'm also proficient
         in mobile app development with React Native and Flutter.
       </p>
 
